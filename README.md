@@ -6,38 +6,38 @@ A complete privacy-focused VPN solution with custom OS, browser, and infrastruct
 
 ### Core Components
 
-#### 1. **PhazeVPN Protocol** (`phazevpn-protocol-go/`)
+#### 1. **PhazeVPN** (`phazevpn/`)
 - Custom VPN protocol implementation in Go
 - Server and client components
 - Security features: DNS leak protection, IPv6 leak protection, WebRTC blocking
 - Kill switch implementation
 
-#### 2. **PhazeOS** (`phazeos-from-scratch/`)
+Mobile apps in PhazeVPN project:
+- Android app (`clients/mobile/android-app/`)
+- iOS app (`clients/mobile/ios-app/`)
+
+#### 2. **PhazeOS** (`chazeos/phazeos-from-scratch/`)
 - Custom Linux distribution built from scratch
 - Kernel: Linux 6.7.4 with complete driver support
 - Desktop: LabWC (Wayland compositor)
 - Privacy-first design
 - Live ISO bootable system
 
-#### 3. **PhazeBrowser** (`phazebrowser-gecko/`)
-- Privacy-focused Firefox-based browser
+#### 3. **PhazeBrowser** (`phazebrowser/phazebrowser-gecko/`)
+- Privacy-focused Firefox-based browser (Gecko is core engine)
 - Custom configurations and extensions
 - Integrated with PhazeVPN
 
-#### 4. **Web Portal** (`web-portal/`)
+#### 4. **Web Portal** (`website/go-web-portal`)
 - Python Flask application
 - User management and authentication
 - VPN configuration generation
 - Admin dashboard
 
-#### 5. **Go Web Server** (`phazevpn-web-go/`)
+#### 5. **Go Web Server** (`website/phazevpn-web-go`)
 - Modern replacement for Python portal
 - JWT authentication
 - API endpoints for VPN management
-
-#### 6. **Mobile Apps**
-- Android app (`android-app/`)
-- iOS app (`ios-app/`)
 
 ### Infrastructure
 
